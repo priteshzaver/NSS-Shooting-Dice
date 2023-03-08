@@ -35,6 +35,11 @@ namespace ShootingDice
             oneHigher.Play(player1);
             Console.WriteLine("-------------------");
 
+            Player human = new HumanPlayer();
+            human.Name = "Pinto";
+            human.Play(player2);
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };
