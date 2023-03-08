@@ -9,10 +9,9 @@ namespace ShootingDice
     {
         public string Taunt { get; }
 
-        public SmackTalkingPlayer(string taunt)
+        public SmackTalkingPlayer()
         {
-            Name = Name;
-            Taunt = taunt;
+            Taunt = "You roll like yo momma";
         }
 
         public override void Play(Player other)

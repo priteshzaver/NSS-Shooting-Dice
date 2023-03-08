@@ -25,7 +25,7 @@ namespace ShootingDice
             player1.Play(large);
             Console.WriteLine("-------------------");
 
-            Player smackTalk = new SmackTalkingPlayer("You roll dice like yo momma!");
+            Player smackTalk = new SmackTalkingPlayer();
             smackTalk.Name = "SmackTalk TheSame";
             smackTalk.Play(large);
             Console.WriteLine("-------------------");
@@ -38,6 +38,11 @@ namespace ShootingDice
             Player human = new HumanPlayer();
             human.Name = "Pinto";
             human.Play(player2);
+            Console.WriteLine("-------------------");
+
+            Player creativeSmackTalker = new CreativeSmackTalkingPlayer();
+            creativeSmackTalker.Name = "New Material";
+            creativeSmackTalker.Play(player3);
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
