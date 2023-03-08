@@ -10,33 +10,29 @@ namespace ShootingDice
         {
             Player player1 = new Player();
             player1.Name = "Bob";
-
             Player player2 = new Player();
             player2.Name = "Sue";
-
             player2.Play(player1);
-
             Console.WriteLine("-------------------");
 
             Player player3 = new Player();
             player3.Name = "Wilma";
-
             player3.Play(player2);
-
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
-
             player1.Play(large);
-
             Console.WriteLine("-------------------");
 
             Player smackTalk = new SmackTalkingPlayer("You roll dice like yo momma!");
             smackTalk.Name = "SmackTalk TheSame";
-
             smackTalk.Play(large);
+            Console.WriteLine("-------------------");
 
+            Player oneHigher = new OneHigherPlayer();
+            oneHigher.Name = "Lucky";
+            oneHigher.Play(player1);
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
