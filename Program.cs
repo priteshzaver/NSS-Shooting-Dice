@@ -45,6 +45,11 @@ namespace ShootingDice
             creativeSmackTalker.Play(player3);
             Console.WriteLine("-------------------");
 
+            Player soreLoser = new SoreLoserPlayer();
+            soreLoser.Name = "Sore Loser";
+            soreLoser.Play(player1);
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };
