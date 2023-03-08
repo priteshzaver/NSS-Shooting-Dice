@@ -50,6 +50,11 @@ namespace ShootingDice
             soreLoser.Play(player1);
             Console.WriteLine("-------------------");
 
+            Player cheater = new UpperHalfPlayer();
+            cheater.Name = "Loaded Die";
+            cheater.Play(player2);
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };
