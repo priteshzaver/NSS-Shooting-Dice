@@ -36,7 +36,7 @@ namespace ShootingDice
             catch (System.Exception)
             {
 
-                Console.WriteLine("I don't want to play anymore!");
+                Console.WriteLine($"{Name} screams I don't want to play anymore!");
             }
 
         }
